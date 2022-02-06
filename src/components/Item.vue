@@ -32,7 +32,7 @@ export default {
 </script>
 
 <style scoped>
-#{
+#item{
     white-space: pre-wrap;
     word-break: break-word;
 }
