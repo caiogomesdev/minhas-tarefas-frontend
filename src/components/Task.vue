@@ -28,13 +28,26 @@ export default{
                 alert("Digite uma tarefa")
                 return;
             }
-            this.tarefas.unshift({text: this.tarefa, key: Date.now()})
+            this.tarefas.push({text: this.tarefa, key: Date.now()})
             this.tarefa = ''
         },
         completedTask(index){
             this.tarefas.splice(index,1)
         }
-    }
+    },
+    watch:{
+        tarefas:{
+            // chama o método quando sofre alguma alteração em this.tarefas
+            deep: true,
+            handler(){
+                localStorage.setItem("tasks", JSON.stringify(this.tarefas))
+            }
+        }
+    },
+    created(){ //chamado quando a instancia do vue é criada
+        const json = localStorage.getItem("tasks")
+        this.tarefas = JSON.parse(json) || []
+    },
 }
 </script>
 

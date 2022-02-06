@@ -1,24 +1,23 @@
-# tarefas
+<div align="center">
+<img src="./github/projeto.gif" style="width: 300px"/>
+</div>
 
-## Project setup
+### Minhas Tarefas
+App feito com vueJS usando components, comunicação com propriedade e armazenamento no localStorage.<br>Praticando atividade do curso do Sujeito Programador. <br />
+[Link da aplicação](http://minhas-tarefas.caiogomesdev.link/)
+### Get started
 ```
-npm install
-```
+# Instale as dependência:
+$ npm install
 
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
+# Para desenvolvimento:
+$ npm run serve
 
-### Compiles and minifies for production
-```
-npm run build
-```
-
-### Lints and fixes files
-```
-npm run lint
+# Para produção:
+$ npm run build
 ```
 
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+---
+
+### Configuração personalizada
+Siga a [Documentação oficial](https://cli.vuejs.org/config/).

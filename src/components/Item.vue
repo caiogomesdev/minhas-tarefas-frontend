@@ -4,6 +4,12 @@
             <li v-for="(task, i) in lista" :key="task.key"> <span>{{task.text}}</span><button @click="concluir(i)" >concluir</button></li>
         </ul>
 
+        <div class="infos" v-show="lista.length > 0">
+            <span>
+                Você tem <strong :class="{alert : lista.length > 4} " >{{lista.length}}</strong> {{lista.length != 1 ? 'tarefas pendentes' : 'tarefa pendente'}} 
+            </span>
+        </div>
+
     </div>
     
 </template>
@@ -55,5 +61,12 @@ button{
     outline: 0;
     border: none;
     border-radius: 4px;
+}
+.alert{
+    color: red;
+}
+.infos{
+    margin-top: 7px;
+    text-align: right;
 }
 </style>
