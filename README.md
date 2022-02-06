@@ -7,7 +7,7 @@ App feito com vueJS usando components, comunicação com propriedade e armazenam
 [Link da aplicação](http://minhas-tarefas.caiogomesdev.link/)
 ### Get started
 ```
-# Instale as dependência:
+# Instale todas as dependências:
 $ npm install
 
 # Para desenvolvimento:
