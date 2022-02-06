@@ -1,28 +1,39 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <header>Minhas tarefas</header>
+    <Task />
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
-
+import Task from "./components/Task.vue"
 export default {
-  name: 'App',
-  components: {
-    HelloWorld
-  }
-}
-</script>
+    name:"App",
+    data(){
+      return{
 
-<style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+      }
+    },
+    methods:{
+
+    },
+    components:{
+      Task
+    }
+  }
+
+</script>
+  
+<style scoped>
+
+header{
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  height: 80px;
+  font-size: 40px;
+  color: #fff;
 }
+
 </style>
