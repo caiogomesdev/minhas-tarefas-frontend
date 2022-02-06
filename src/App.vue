@@ -9,6 +9,9 @@
 import Task from "./components/Task.vue"
 export default {
     name:"App",
+    components:{
+      Task    
+    },
     data(){
       return{
 
@@ -17,9 +20,7 @@ export default {
     methods:{
 
     },
-    components:{
-      Task
-    }
+    
   }
 
 </script>
